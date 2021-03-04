@@ -34,5 +34,5 @@ sed -i -e 's/\r//' README.md
 %files -n python-%{pypi_name}
 %license LICENSE.txt
 %doc README.md
-#{python_sitelib}/%{name}/
-#{python_sitelib}/%{name}-*.egg-info/
+%{python_sitelib}/python_socks/
+%{python_sitelib}/python_socks-*.egg-info/
