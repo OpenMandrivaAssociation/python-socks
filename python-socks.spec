@@ -2,7 +2,7 @@
 
 Name:           python-%{module}
 Version:        2.0.3
-Release:        1
+Release:        2
 Summary:        Core proxy (SOCKS4, SOCKS5, HTTP tunneling) functionality for Python
 
 License:        Apache 2
