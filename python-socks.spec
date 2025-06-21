@@ -1,13 +1,15 @@
 %global	module socks
 
 Name:           python-%{module}
-Version:        2.0.3
-Release:        2
+Version:        2.7.1
+Release:        1
 Summary:        Core proxy (SOCKS4, SOCKS5, HTTP tunneling) functionality for Python
 
 License:        Apache 2
 URL:            https://github.com/romis2012/python-socks
-Source:         https://files.pythonhosted.org/packages/source/p/%{name}/%{name}-%{version}.tar.gz
+Source:         %url/archive/refs/tags/v%version.tar.gz#/%{name}/%{name}-%{version}.tar.gz
+
+BuildSystem:    python
 
 BuildRequires:	pkgconfig(python3)
 BuildRequires:	python3dist(setuptools)
@@ -23,17 +25,6 @@ You probably don't need to use python-socks directly. It is used internally by a
 %license LICENSE.txt
 %doc README.md
 %{python_sitelib}/python_socks/
-%{python_sitelib}/python_socks-*.egg-info/
+%{python_sitelib}/python_socks-%version.dist-info/
 
 #----------------------------------------------------------------------------
-
-%prep
-%autosetup
-rm -vrf *.egg-info
-sed -i -e 's/\r//' README.md
-
-%build
-%py_build
-
-%install
-%py_install
