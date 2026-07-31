@@ -2,7 +2,7 @@
 %define oname python_socks
 
 Name:		python-socks
-Version:	2.8.1
+Version:	2.8.2
 Release:	1
 Summary:	Core proxy (SOCKS4, SOCKS5, HTTP tunneling) functionality for Python
 License:	Apache-2.0
