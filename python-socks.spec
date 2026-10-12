@@ -3,9 +3,10 @@
 
 Name:		python-socks
 Version:	2.8.2
-Release:	1
+Release:	2
 Summary:	Core proxy (SOCKS4, SOCKS5, HTTP tunneling) functionality for Python
 License:	Apache-2.0
+Group:	Development/Python
 URL:		https://github.com/romis2012/python-socks
 Source:		%{URL}/archive/v%{version}/%{name}-%{version}.tar.gz
 BuildSystem:	python
